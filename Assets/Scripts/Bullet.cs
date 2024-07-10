@@ -16,7 +16,7 @@ public class Bullet : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    private void Start()
+    private void OnEnable()
     {
         StartCoroutine(SelfDestruct());
     }
